@@ -1,6 +1,6 @@
 <?php
 
-function ctrlseeInscripcio($request, $response, $container){
+function ctrlseeinscripcio($request, $response, $container){
 
     $identified = $request->get("SESSION", "identified");
 

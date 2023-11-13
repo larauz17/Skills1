@@ -1,6 +1,6 @@
 <?php
 
-function ctrlFormulari($request, $response, $container){
+function ctrlformulari($request, $response, $container){
 
     $response->setTemplate("formulari.html");
 

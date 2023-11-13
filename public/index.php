@@ -43,17 +43,17 @@
  
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
-     $response = ctrlIndex($request, $response, $container);
+     $response = ctrlindex($request, $response, $container);
  } elseif($r == "adduser") {
   $response = ctrladduser($request, $response, $container);
  } elseif($r == "seeinscripcio") {
-  $response = ctrlseeInscripcio($request, $response, $container);
+  $response = ctrlseeinscripcio($request, $response, $container);
  } elseif($r == "accessinscripcio") {
-  $response = ctrlInscripcio($request, $response, $container);
+  $response = ctrlinscripcio($request, $response, $container);
  } elseif($r == "json") {
   $response = ctrlJson($request, $response, $container);
  }elseif($r == "formulari"){
-  $response = ctrlFormulari($request, $response, $container);
+  $response = ctrlformulari($request, $response, $container);
 } elseif($r == "password"){
     $response = ctrlpass($request, $response, $container);
 } else {

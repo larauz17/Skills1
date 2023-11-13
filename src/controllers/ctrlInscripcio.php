@@ -1,6 +1,6 @@
 <?php
 
-function ctrlInscripcio($request, $response, $container){
+function ctrlinscripcio($request, $response, $container){
     $pass = $request->get(INPUT_GET,"pass");
     $code = "contrasenya";
     
