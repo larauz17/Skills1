@@ -13,4 +13,4 @@ $config = [
     ],
 ];
 
-include "../src/models/Users.php";
+include "../src/models/users.php";
