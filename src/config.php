@@ -8,7 +8,9 @@ $config = [
     "db" => [
         "user" => "root",
         "pass" => "",
-        "db" => "apt-fig",
+        "db" => "skills1",
         "host" => "localhost"
     ],
 ];
+
+include "../src/models/Users.php";

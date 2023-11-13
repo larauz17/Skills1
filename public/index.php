@@ -6,6 +6,16 @@
 
  include "../src/config.php";
  include "../src/controllers/ctrlIndex.php";
+ include "../src/controllers/ctrlFormulari.php";
+ include "../src/controllers/ctrladduser.php";
+ include "../src/controllers/ctrlInscripcio.php";
+ include "../src/controllers/ctrlpass.php";
+ include "../src/controllers/ctrlSeeInscripcio.php";
+
+
+ 
+
+
  include "../src/controllers/ctrlJson.php";
 
 /**
@@ -34,8 +44,18 @@
  /* Front Controller, aquí es decideix quina acció s'executa */
  if($r == "") {
      $response = ctrlIndex($request, $response, $container);
+ } elseif($r == "adduser") {
+  $response = ctrladduser($request, $response, $container);
+ } elseif($r == "seeinscripcio") {
+  $response = ctrlseeInscripcio($request, $response, $container);
+ } elseif($r == "accessinscripcio") {
+  $response = ctrlInscripcio($request, $response, $container);
  } elseif($r == "json") {
   $response = ctrlJson($request, $response, $container);
+ }elseif($r == "formulari"){
+  $response = ctrlFormulari($request, $response, $container);
+} elseif($r == "password"){
+    $response = ctrlpass($request, $response, $container);
 } else {
      echo "No existeix la ruta";
  }
